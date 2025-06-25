@@ -1,0 +1,97 @@
+html body #apropos {
+  padding: 24px 50px 50px 50px;
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+  scroll-margin: 125px;
+}
+
+@media (min-width: 768px) {
+  html body #apropos {
+    gap: 50px;
+  }
+}
+
+@media (min-width: 1400px) {
+  html body #apropos {
+    padding: 24px 100px 80px 100px;
+  }
+}
+
+html body #apropos #infosContainer {
+  padding-top: 26px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  html body #apropos #infosContainer {
+    gap: 50px;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1400px) {
+  html body #apropos #infosContainer {
+    padding-top: 56px;
+    flex-direction: row;
+  }
+}
+
+html body #apropos #infosContainer .infoContainer {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease-out;
+}
+
+html body #apropos #infosContainer .infoContainer:hover {
+  transform: scale(1.02);
+}
+
+html body #apropos #infosContainer .infoContainer .decoration {
+  width: 100%;
+  height: 150px;
+}
+
+html body #apropos #infosContainer > div:nth-child(1) .decoration {
+  background: linear-gradient(90deg, #302984 0%, #733564 100%);
+}
+
+html body #apropos #infosContainer > div:nth-child(2) .decoration {
+  background: #733564;
+}
+
+html body #apropos #infosContainer > div:nth-child(3) .decoration {
+  background: linear-gradient(90deg, #733564 0%, #d2213c 99.99%);
+}
+
+html body #apropos #infosContainer .infoContainer .info {
+  padding: 20px;
+  width: 100%;
+  height: fit-content;
+  min-height: 150px;
+  display: flex;
+  gap: 0.7rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+html body #apropos #infosContainer .infoContainer .info h3 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+html body #apropos #infosContainer .infoContainer .info p {
+  color: #919191;
+  text-align: center;
+}

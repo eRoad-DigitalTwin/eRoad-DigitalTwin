@@ -1,0 +1,37 @@
+html body .separatorContainer {
+  position: relative;
+  width: 80%;
+  display: flex;
+}
+
+html body .separatorContainer .separator {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(48, 41, 132, 1) 0%, rgba(210, 33, 60, 1) 100%);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+html body .separatorContainer .separatorName {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: flex;
+  padding: 10px 20px;
+  background-color: white;
+  border: #6f2567 2px solid;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+html body .separatorContainer .separatorName p {
+  text-wrap: nowrap;
+  color: #6f2567;
+  font-weight: 600;
+}
+
+@media (min-width: 635px) {
+  html body .separatorContainer .separatorName p {
+    font-size: 1.2rem;
+  }
+}

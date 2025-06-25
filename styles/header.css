@@ -1,0 +1,123 @@
+html body header.desktop {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+@media (min-width: 1023px) {
+  html body header.desktop {
+    display: flex;
+  }
+}
+
+html body header.desktop .logo {
+  display: flex;
+  height: 80%;
+  object-fit: contain;
+}
+
+html body header.desktop nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+html body header.desktop nav a {
+  position: relative;
+  font-weight: 600;
+}
+
+html body header.desktop nav a:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 5px;
+  transition: width 0.3s ease-out;
+  background: linear-gradient(90deg, rgba(48, 41, 132, 1) 0%, rgba(210, 33, 60, 1) 100%);
+}
+
+html body header.desktop nav a:last-child:after {
+  display: none;
+}
+
+html body header.desktop nav a:hover:after {
+  width: 100%;
+  transform-origin: left;
+}
+
+/*///////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////*/
+
+html body header.mobile {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+@media (min-width: 1023px) {
+  html body header.mobile {
+    display: none;
+  }
+}
+
+html body header.mobile .logo {
+  display: flex;
+  height: 80%;
+  object-fit: contain;
+}
+
+html body header.mobile .menu {
+  display: flex;
+  height: 50%;
+  object-fit: contain;
+}
+
+html body nav.mobile {
+  overflow: hidden;
+  position: fixed;
+  top: 50px;
+  right: -50px;
+  width: 0px;
+  height: fit-content;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  transition: width 0.3s ease-out, right 0.3s ease-out;
+  background: linear-gradient(90deg, rgba(48, 41, 132, 1) 0%, rgba(210, 33, 60, 1) 100%);
+}
+
+html body nav.mobile a {
+  text-wrap: nowrap;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+html body nav.mobile.open {
+  right: 0px;
+  width: 100%;
+}

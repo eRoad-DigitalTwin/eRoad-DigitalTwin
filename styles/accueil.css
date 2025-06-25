@@ -1,0 +1,119 @@
+html body #accueil {
+  padding: 50px 20px 50px 20px;
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+  scroll-margin: 100px;
+}
+
+@media (min-width: 425px) {
+  html body #accueil {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 1400px) {
+  html body #accueil {
+    padding: 50px 100px 80px 100px;
+  }
+}
+
+html body #accueil #head {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+html body #accueil #head h1 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+html body #accueil #head h2 {
+  font-style: italic;
+}
+
+@media (min-width: 635px) {
+  html body #accueil #head {
+    gap: 1rem;
+  }
+
+  html body #accueil #head h1 {
+    font-size: 2.5rem;
+  }
+
+  html body #accueil #head h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  html body #accueil #head {
+    gap: 1.5rem;
+  }
+
+  html body #accueil #head h1 {
+    font-size: 3rem;
+  }
+}
+
+html body #accueil #head button {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(48, 41, 132, 1) 0%, rgba(210, 33, 60, 1) 100%);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease-out;
+}
+
+html body #accueil #head button:hover {
+  transform: scale(1.03);
+}
+
+html body #accueil #headDecoration {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 635px) {
+  html body #accueil #headDecoration {
+    height: 150px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html body #accueil #headDecoration {
+    height: 250px;
+  }
+}
+
+@media (min-width: 1400px) {
+  html body #accueil #headDecoration {
+    height: 300px;
+  }
+}
+
+html body #accueil #headDecoration img {
+  width: 100%;
+  object-fit: cover;
+}
+
+html body #accueil #headDecoration div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(48, 41, 132, 0.75) 0%, rgba(210, 33, 60, 0.75) 100%);
+}
