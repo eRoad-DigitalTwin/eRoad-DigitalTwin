@@ -7,6 +7,7 @@ html body .separatorContainer {
 html body .separatorContainer .separator {
   width: 100%;
   height: 2px;
+  border-radius: 10px;
   background: linear-gradient(90deg, rgba(48, 41, 132, 1) 0%, rgba(210, 33, 60, 1) 100%);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
 }

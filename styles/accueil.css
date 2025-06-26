@@ -10,6 +10,7 @@ html body #accueil {
 
 @media (min-width: 425px) {
   html body #accueil {
+    scroll-margin: 50px;
     padding: 50px;
   }
 }

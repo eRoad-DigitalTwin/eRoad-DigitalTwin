@@ -5,7 +5,7 @@ html body #demonstration {
   gap: 50px;
   flex-direction: column;
   align-items: center;
-  scroll-margin: 125px;
+  scroll-margin: 100px;
 }
 
 @media (min-width: 768px) {
@@ -16,8 +16,9 @@ html body #demonstration {
 
 @media (min-width: 1400px) {
   html body #demonstration {
-    padding: 24px 100px 80px 100px;
     gap: 80px;
+    padding: 24px 100px 80px 100px;
+    scroll-margin: 125px;
   }
 }
 

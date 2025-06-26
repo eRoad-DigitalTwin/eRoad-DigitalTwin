@@ -1,11 +1,11 @@
 html body #apropos {
-  padding: 24px 50px 50px 50px;
+  padding: 24px 20px 50px 20px;
   width: 100%;
   display: flex;
   gap: 50px;
   flex-direction: column;
   align-items: center;
-  scroll-margin: 125px;
+  scroll-margin: 100px;
 }
 
 @media (min-width: 768px) {
@@ -17,6 +17,7 @@ html body #apropos {
 @media (min-width: 1400px) {
   html body #apropos {
     padding: 24px 100px 80px 100px;
+    scroll-margin: 125px;
   }
 }
 
