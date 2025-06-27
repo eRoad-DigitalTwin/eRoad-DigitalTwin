@@ -51,6 +51,7 @@ html body #articlesScientifique #articlesContainer .articles {
 @media (min-width: 768px) {
   html body #articlesScientifique #articlesContainer .articles {
     flex-direction: row;
+    /* flex-direction: column; */
   }
 }
 

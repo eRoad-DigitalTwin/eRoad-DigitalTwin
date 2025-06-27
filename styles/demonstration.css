@@ -125,6 +125,7 @@ html body #demonstration .demoContainer .demoDescription .demoFonctionality .dem
 html body #demonstration .demoContainer .demoDescription .demoDecoration {
   width: 100%;
   height: 100%;
+  min-height: 150px;
   display: none;
   border-radius: 10px;
   background: linear-gradient(90deg, rgba(48, 41, 132, 1) 0%, rgba(210, 33, 60, 1) 100%);
@@ -140,7 +141,7 @@ html body #demonstration .demoContainer .demoDescription .demoDecoration {
 html body #demonstration .demoContainer .demoVideo {
   padding: 20px;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   border-radius: 10px;

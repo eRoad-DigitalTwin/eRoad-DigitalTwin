@@ -26,6 +26,7 @@ html body header.desktop .logo {
 }
 
 html body header.desktop nav {
+  height: 100%;
   display: flex;
   gap: 2rem;
   justify-content: center;
@@ -33,8 +34,20 @@ html body header.desktop nav {
 }
 
 html body header.desktop nav a {
+  height: fit-content;
+  display: flex;
+  align-items: center;
   position: relative;
   font-weight: 600;
+}
+
+html body header.desktop nav a.flag {
+  height: 100%;
+}
+
+html body header.desktop nav a.flag img {
+  height: 50%;
+  object-fit: contain;
 }
 
 html body header.desktop nav a:after {
@@ -49,7 +62,7 @@ html body header.desktop nav a:after {
   background: linear-gradient(90deg, rgba(48, 41, 132, 1) 0%, rgba(210, 33, 60, 1) 100%);
 }
 
-html body header.desktop nav a:last-child:after {
+html body header.desktop nav a.flag:after {
   display: none;
 }
 
