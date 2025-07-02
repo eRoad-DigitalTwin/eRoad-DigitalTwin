@@ -1,4 +1,4 @@
-html body #articlesScientifique {
+html body .publicationsContainer {
   padding: 24px 20px 50px 20px;
   width: 100%;
   display: flex;
@@ -9,19 +9,19 @@ html body #articlesScientifique {
 }
 
 @media (min-width: 768px) {
-  html body #articlesScientifique {
+  html body .publicationsContainer {
     gap: 50px;
   }
 }
 
 @media (min-width: 1400px) {
-  html body #articlesScientifique {
+  html body .publicationsContainer {
     padding: 24px 100px 80px 100px;
     scroll-margin: 124px;
   }
 }
 
-html body #articlesScientifique #articlesContainer {
+html body .publicationsContainer #articlesContainer {
   padding-top: 26px;
   width: 100%;
   display: flex;
@@ -30,18 +30,18 @@ html body #articlesScientifique #articlesContainer {
 }
 
 @media (min-width: 768px) {
-  html body #articlesScientifique #articlesContainer {
+  html body .publicationsContainer #articlesContainer {
     gap: 50px;
   }
 }
 
 @media (min-width: 1400px) {
-  html body #articlesScientifique #articlesContainer {
+  html body .publicationsContainer #articlesContainer {
     padding-top: 56px;
   }
 }
 
-html body #articlesScientifique #articlesContainer .articles {
+html body .publicationsContainer #articlesContainer .articles {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -49,18 +49,17 @@ html body #articlesScientifique #articlesContainer .articles {
 }
 
 @media (min-width: 768px) {
-  html body #articlesScientifique #articlesContainer .articles {
+  html body .publicationsContainer #articlesContainer .articles {
     flex-direction: row;
-    /* flex-direction: column; */
   }
 }
 
-html body #articlesScientifique #articlesContainer .articles > div {
+html body .publicationsContainer #articlesContainer .articles > div {
   display: flex;
   width: 100%;
 }
 
-html body #articlesScientifique #articlesContainer .articles .article {
+html body .publicationsContainer #articlesContainer .articles .article {
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -71,31 +70,31 @@ html body #articlesScientifique #articlesContainer .articles .article {
   transition: transform 0.3s ease-out;
 }
 
-html body #articlesScientifique #articlesContainer .articles .article:hover {
+html body .publicationsContainer #articlesContainer .articles .article:hover {
   transform: scale(1.03);
 }
 
-html body #articlesScientifique #articlesContainer .articles .article.filler {
+html body .publicationsContainer #articlesContainer .articles .article.filler {
   flex: 1;
   background: linear-gradient(90deg, rgba(48, 41, 132, 1) 0%, rgba(210, 33, 60, 1) 100%);
 }
 
-html body #articlesScientifique #articlesContainer .articles .article.filler {
+html body .publicationsContainer #articlesContainer .articles .article.filler {
   transform: scale(1);
 }
 
 @media (max-width: 767px) {
-  html body #articlesScientifique #articlesContainer .articles .article.filler {
+  html body .publicationsContainer #articlesContainer .articles .article.filler {
     display: none;
   }
 }
 
-html body #articlesScientifique #articlesContainer .articles .article img {
+html body .publicationsContainer #articlesContainer .articles .article img {
   width: 100%;
   object-fit: cover;
 }
 
-html body #articlesScientifique #articlesContainer .articles .article .articleInfos {
+html body .publicationsContainer #articlesContainer .articles .article .articleInfos {
   padding: 15px;
   width: 100%;
   display: flex;
@@ -103,7 +102,14 @@ html body #articlesScientifique #articlesContainer .articles .article .articleIn
   gap: 15px;
 }
 
-html body #articlesScientifique #articlesContainer .articles .article .articleInfos .articleHeader {
+html
+  body
+  .publicationsContainer
+  #articlesContainer
+  .articles
+  .article
+  .articleInfos
+  .articleHeader {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -112,7 +118,7 @@ html body #articlesScientifique #articlesContainer .articles .article .articleIn
 
 html
   body
-  #articlesScientifique
+  .publicationsContainer
   #articlesContainer
   .articles
   .article
@@ -125,7 +131,7 @@ html
 
 html
   body
-  #articlesScientifique
+  .publicationsContainer
   #articlesContainer
   .articles
   .article
@@ -139,7 +145,7 @@ html
 
 html
   body
-  #articlesScientifique
+  .publicationsContainer
   #articlesContainer
   .articles
   .article
@@ -151,7 +157,7 @@ html
 }
 html
   body
-  #articlesScientifique
+  .publicationsContainer
   #articlesContainer
   .articles
   .article
@@ -163,7 +169,7 @@ html
 
 html
   body
-  #articlesScientifique
+  .publicationsContainer
   #articlesContainer
   .articles
   .article
@@ -175,7 +181,7 @@ html
 
 html
   body
-  #articlesScientifique
+  .publicationsContainer
   #articlesContainer
   .articles
   .article

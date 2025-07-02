@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>eRoadMontBlanc</title>
+    <title>Mobili'Twin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,10 +36,11 @@
         <img src="./assets/logo2.png" />
       </a>
       <nav>
-        <a href="#accueil">ACCUEIL</a>
-        <a href="#apropos">À PROPOS</a>
-        <a href="#demonstration">DÉMONSTRATION</a>
-        <a href="#articlesScientifique">PUBLICATIONS</a>
+        <a href="#accueil">Accueil </a>
+        <a href="#apropos">À propos</a>
+        <a href="#demonstration">Démonstration</a>
+        <a href="#actuEvent" onclick="openSideNav()">Actualités & Évènements</a>
+        <a href="#articlesScientifique">Publications scientifiques</a>
         <a href="index-en.html" class="flag">
           <img src="./assets/flag_en.png" />
         </a>
@@ -53,10 +54,11 @@
       <img src="./assets/menu.svg" class="menu" onclick="openSideNav()" />
     </header>
     <nav class="mobile">
-      <a href="#accueil" onclick="openSideNav()">ACCUEIL</a>
-      <a href="#apropos" onclick="openSideNav()">À PROPOS</a>
-      <a href="#demonstration" onclick="openSideNav()">DÉMONSTRATION</a>
-      <a href="#articlesScientifique" onclick="openSideNav()">PUBLICATIONS</a>
+      <a href="#accueil">Accueil </a>
+      <a href="#apropos">À propos</a>
+      <a href="#demonstration">Démonstration</a>
+      <a href="#actuEvent" onclick="openSideNav()">Actualités & Évènements</a>
+      <a href="#articlesScientifique">Publications scientifiques</a>
       <a href="index-en.html">
         <img src="./assets/flag_en.png" />
       </a>
@@ -64,7 +66,7 @@
 
     <section id="accueil">
       <div id="head">
-        <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="0">Jumeau Numérique</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="0">Mobili'Twin</h1>
         <h2 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
           Platforme de jumeau numérique
         </h2>
@@ -257,11 +259,14 @@
           <div class="swiper-slide">
             <img src="./assets/outilsLogos/flask.webp" alt="Flask" />
           </div>
+          <div class="swiper-slide">
+            <img src="./assets/outilsLogos/fiware.png" alt="Fiware" />
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="articlesScientifique">
+    <section id="actuEvent" class="publicationsContainer">
       <div
         class="separatorContainer"
         data-aos="fade-up"
@@ -270,14 +275,14 @@
       >
         <div class="separator"></div>
         <div class="separatorName">
-          <p>PUBLICATIONS</p>
+          <p>ACTUALITÉS & ÉVÈNEMENTS</p>
         </div>
       </div>
 
       <div id="articlesContainer">
         <div class="articles">
           <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-            <a href="./" class="article">
+            <a href="./articles/exampleArticle/index.html" class="article">
               <img src="./assets/headDecoration.png" />
               <div class="articleInfos">
                 <div class="articleHeader">
@@ -293,6 +298,82 @@
             </a>
           </div>
 
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+            <a href="./articles/exampleArticle/index.html" class="article">
+              <img src="./assets/headDecoration.png" />
+              <div class="articleInfos">
+                <div class="articleHeader">
+                  <div class="articleHeaderDecoration"></div>
+                  <div class="publicationDate">06/06/2025</div>
+                </div>
+                <div class="articleContent">
+                  <h2>TITRE DE L’ARTICLE EN MAJUSCULE AVEC LE TEXT DÉCALÉ SUR LA GAUCHE</h2>
+                  <p>Court résumé de l’article scientifique ou l’abstract, à voir.</p>
+                  <p class="author">Écrit par : Auteur</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+            <a href="./articles/exampleArticle/index.html" class="article">
+              <img src="./assets/headDecoration.png" />
+              <div class="articleInfos">
+                <div class="articleHeader">
+                  <div class="articleHeaderDecoration"></div>
+                  <div class="publicationDate">06/06/2025</div>
+                </div>
+                <div class="articleContent">
+                  <h2>TITRE DE L’ARTICLE EN MAJUSCULE AVEC LE TEXT DÉCALÉ SUR LA GAUCHE</h2>
+                  <p>Court résumé de l’article scientifique ou l’abstract, à voir.</p>
+                  <p class="author">Écrit par : Auteur</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="articles">
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+            <a href="./articles/exampleArticle/index.html" class="article">
+              <img src="./assets/headDecoration.png" />
+              <div class="articleInfos">
+                <div class="articleHeader">
+                  <div class="articleHeaderDecoration"></div>
+                  <div class="publicationDate">06/06/2025</div>
+                </div>
+                <div class="articleContent">
+                  <h2>TITRE DE L’ARTICLE EN MAJUSCULE AVEC LE TEXT DÉCALÉ SUR LA GAUCHE</h2>
+                  <p>Court résumé de l’article scientifique ou l’abstract, à voir.</p>
+                  <p class="author">Écrit par : Auteur</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+            <div class="article filler"></div>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+            <div class="article filler"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="articlesScientifique" class="publicationsContainer">
+      <div
+        class="separatorContainer"
+        data-aos="fade-up"
+        data-aos-duration="1200"
+        data-aos-delay="0"
+      >
+        <div class="separator"></div>
+        <div class="separatorName">
+          <p>PUBLICATIONS SCIENTIFIQUES</p>
+        </div>
+      </div>
+
+      <div id="articlesContainer">
+        <div class="articles">
           <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
             <a href="./" class="article">
               <img src="./assets/headDecoration.png" />
@@ -326,8 +407,7 @@
               </div>
             </a>
           </div>
-        </div>
-        <div class="articles">
+
           <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
             <a href="./" class="article">
               <img src="./assets/headDecoration.png" />
@@ -344,10 +424,28 @@
               </div>
             </a>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+        </div>
+        <div class="articles">
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+            <a href="./" class="article">
+              <img src="./assets/headDecoration.png" />
+              <div class="articleInfos">
+                <div class="articleHeader">
+                  <div class="articleHeaderDecoration"></div>
+                  <div class="publicationDate">06/06/2025</div>
+                </div>
+                <div class="articleContent">
+                  <h2>TITRE DE L’ARTICLE EN MAJUSCULE AVEC LE TEXT DÉCALÉ SUR LA GAUCHE</h2>
+                  <p>Court résumé de l’article scientifique ou l’abstract, à voir.</p>
+                  <p class="author">Écrit par : Auteur</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
             <div class="article filler"></div>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
             <div class="article filler"></div>
           </div>
         </div>

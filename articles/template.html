@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eRoadMontBlanc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../styles.css" rel="stylesheet" />
+    <link href="../styles/header.css" rel="stylesheet" />
+    <link href="../styles/article.css" rel="stylesheet" />
+    <link href="../styles/footer.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./assets/logo2.png" />
+  </head>
+  <body>
+    <header class="desktop">
+      <a href="#accueil" class="logo">
+        <img src="../assets/logo2.png" />
+      </a>
+      <nav>
+        <a href="/">Accueil </a>
+        <a href="/#apropos">À propos</a>
+        <a href="/#demonstration">Démonstration</a>
+        <a href="/#actuEvent" onclick="openSideNav()">Actualités & Évènements</a>
+        <a href="/#articlesScientifique">Publications scientifiques</a>
+        <a href="../index-en.html" class="flag">
+          <img src="../assets/flag_en.png" />
+        </a>
+      </nav>
+    </header>
+
+    <header class="mobile">
+      <a href="../" class="logo">
+        <img src="../assets/logo2.png" />
+      </a>
+      <img src="../assets/menu.svg" class="menu" onclick="openSideNav()" />
+    </header>
+    <nav class="mobile">
+      <a href="/">Accueil </a>
+      <a href="/#apropos">À propos</a>
+      <a href="/#demonstration">Démonstration</a>
+      <a href="/#actuEvent" onclick="openSideNav()">Actualités & Évènements</a>
+      <a href="/#articlesScientifique">Publications scientifiques</a>
+      <a href="../index-en.html">
+        <img src="../assets/flag_en.png" />
+      </a>
+    </nav>
+
+    <section class="articleContainer">
+      <article class="article">
+        <div class="textContainer">
+          <h1>XXXXXXXXXXXXXXXXXXXXXXXX</h1>
+          <p class="accroche">XXXXXXXXXXXXXXXXXXXXXXXX</p>
+          <div class="decoration"></div>
+        </div>
+
+        <img src="../assets/headDecoration.png" />
+
+        <div class="textContainer">
+          <p>XXXXXXXXXXXXXXXXXXXXXXXX</p>
+          <p>XXXXXXXXXXXXXXXXXXXXXXXX</p>
+        </div>
+
+        <img src="../assets/headDecoration.png" />
+
+        <div class="textContainer">
+          <p>XXXXXXXXXXXXXXXXXXXXXXXX</p>
+        </div>
+
+        <div class="textContainer endText">
+          <p class="auteur">Écrit par : xxxxx</p>
+          <div class="decorationSmall"></div>
+          <p class="publicationDate">DD/MM/AAAA</p>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <p>©Université Gustave Eiffel - 2025</p>
+    </footer>
+    <script src="../index.js"></script>
+  </body>
+</html>
