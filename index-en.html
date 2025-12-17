@@ -4,24 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eRoadMontBlanc</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Bx3J...etc"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
     <link href="styles.css" rel="stylesheet" />
     <link href="./styles/header.css" rel="stylesheet" />
     <link href="./styles/accueil.css" rel="stylesheet" />
@@ -31,10 +28,8 @@
     <link href="./styles/swiper.css" rel="stylesheet" />
     <link href="./styles/articlesScientifique.css" rel="stylesheet" />
     <link href="./styles/footer.css" rel="stylesheet" />
-
     <link rel="icon" type="image/x-icon" href="./assets/logo2.png" />
   </head>
-
   <body>
     <header class="desktop">
       <a href="#accueil" class="logo">
@@ -44,10 +39,10 @@
         <a href="#accueil">Home</a>
         <a href="#apropos">About</a>
         <a href="#demonstration">Demonstration</a>
-        <a href="#actuEvent">News & Events</a>
+        <a href="#actuEvent" onclick="openSideNav()">News & Events</a>
         <a href="#articlesScientifique">Scientific Publications</a>
-        <a href="index.html" class="flag">
-          <img src="./assets/flag_fr.png" />
+        <a href="index-en.html" class="flag">
+          <img src="./assets/flag_en.png" />
         </a>
       </nav>
     </header>
@@ -58,26 +53,25 @@
       </a>
       <img src="./assets/menu.svg" class="menu" onclick="openSideNav()" />
     </header>
-
     <nav class="mobile">
       <a href="#accueil">Home</a>
       <a href="#apropos">About</a>
       <a href="#demonstration">Demonstration</a>
-      <a href="#actuEvent">News & Events</a>
+      <a href="#actuEvent" onclick="openSideNav()">News & Events</a>
       <a href="#articlesScientifique">Scientific Publications</a>
-      <a href="index.html">
-        <img src="./assets/flag_fr.png" />
+      <a href="index-en.html">
+        <img src="./assets/flag_en.png" />
       </a>
     </nav>
 
     <section id="accueil">
       <div id="head">
-        <h1 data-aos="fade-up" data-aos-duration="1200">eRoadMontBlanc</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="0">eRoadMontBlanc</h1>
         <h2 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
           Digital Twin Platform
         </h2>
         <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
-          <button>ACCESS THE PLATFORM</button>
+          <button>GO TO THE PLATFORM</button>
         </div>
       </div>
       <div id="headDecoration" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
@@ -87,7 +81,12 @@
     </section>
 
     <section id="apropos">
-      <div class="separatorContainer" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+      <div
+        class="separatorContainer"
+        data-aos="fade-up"
+        data-aos-duration="1200"
+        data-aos-delay="800"
+      >
         <div class="separator"></div>
         <div class="separatorName">
           <p>ABOUT</p>
@@ -95,14 +94,14 @@
       </div>
 
       <div id="infosContainer">
-        <div data-aos="fade-up" data-aos-duration="1200">
+        <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="0">
           <div class="infoContainer">
             <div class="decoration"></div>
             <div class="info">
-              <h3>Supervision</h3>
+              <h3>Monitoring</h3>
               <p>
-                Our digital twin platform enables real-time monitoring and analysis
-                through dashboards, maps and 2D/3D visualizations.
+                Our digital twin platform enables you to visualize and analyze real-time sensor
+                data in different forms (charts, maps, 3D viewer, etc.).
               </p>
             </div>
           </div>
@@ -114,8 +113,9 @@
             <div class="info">
               <h3>Interaction</h3>
               <p>
-                Data analysis enables automated or assisted actions on the physical system
-                when predefined thresholds or conditions are reached.
+                Data analysis enables you to automatically act on your physical entity. In the case
+                of a building, we could imagine opening a room’s windows if a critical threshold is
+                reached.
               </p>
             </div>
           </div>
@@ -127,8 +127,8 @@
             <div class="info">
               <h3>Simulation</h3>
               <p>
-                Collected data can be used to run simulations and study system behavior
-                under different parameters and scenarios.
+                You can use the collected data to run behavioral simulations and study how your
+                physical entity evolves depending on certain parameters.
               </p>
             </div>
           </div>
@@ -137,7 +137,12 @@
     </section>
 
     <section id="demonstration">
-      <div class="separatorContainer" data-aos="fade-up">
+      <div
+        class="separatorContainer"
+        data-aos="fade-up"
+        data-aos-duration="1200"
+        data-aos-delay="0"
+      >
         <div class="separator"></div>
         <div class="separatorName">
           <p>DEMONSTRATION</p>
@@ -146,222 +151,520 @@
 
       <div class="demoContainer first">
         <div class="demoDescription">
-          <div class="demoFonctionality">
+          <div
+            class="demoFonctionality"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="0"
+          >
             <div class="demoTitle">
               <h2>I. DASHBOARDS</h2>
               <div class="demoTitleDecoration"></div>
             </div>
             <div class="demoText">
               <p>
-                Create custom dashboards by adding available components,
-                resizing them and arranging them freely.
+                Create your own dashboard by adding available components, changing their sizes, and
+                moving them around.
               </p>
               <p>
-                Access model-related charts and indicators directly from
-                the navigation bar.
+                You can also view the charts linked to a model by clicking the icons in the
+                navigation bar.
               </p>
             </div>
           </div>
+          <div
+            class="demoDecoration"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+          ></div>
         </div>
-        <div class="demoVideo">
+        <div class="demoVideo" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/dcq-MlnMuC0"
+            src="https://www.youtube.com/embed/dcq-MlnMuC0?si=s3-uVVC9ygnw9ccs"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
         </div>
       </div>
 
       <div class="demoContainer inverse">
-        <div class="demoVideo">
+        <div class="demoVideo" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="0">
           <iframe
             width="100%"
             height="400px"
-            src="https://www.youtube.com/embed/K85mqQjKuCM"
+            src="https://www.youtube.com/embed/K85mqQjKuCM?si=24och_4Iv8Ge1rtF"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
         </div>
         <div class="demoDescription">
-          <div class="demoFonctionality">
+          <div
+            class="demoFonctionality"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+          >
             <div class="demoTitle">
-              <h2>II. 2D / 3D VISUALIZER</h2>
+              <h2>II. THE 3D VIEWER</h2>
               <div class="demoTitleDecoration"></div>
             </div>
             <div class="demoText">
               <p>
-                Visualize the physical environment using an interactive 2D/3D engine.
-                Filter elements, switch display modes and interact with objects
-                to access contextual information.
+                Visualize, in a 2D/3D engine, the environment of your physical entity. You can
+                filter what is displayed, change the display mode of certain elements, and interact
+                with elements to obtain different information.
               </p>
             </div>
           </div>
+          <div
+            class="demoDecoration"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="400"
+          ></div>
         </div>
       </div>
 
       <div class="demoContainer first">
         <div class="demoDescription">
-          <div class="demoFonctionality">
+          <div
+            class="demoFonctionality"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="0"
+          >
             <div class="demoTitle">
               <h2>III. DATA EXTRACTION</h2>
               <div class="demoTitleDecoration"></div>
             </div>
             <div class="demoText">
               <p>
-                Easily extract geographic data by selecting routes or points
-                of interest directly on the map.
+                Easily extract geographic data from the map by selecting a route or points of
+                interest.
               </p>
               <p>
-                Generated datasets can be configured, exported and reused
-                within models and simulations.
+                The generated data can be parameterized, exported, and reused directly in the
+                platform’s models and simulations.
               </p>
             </div>
           </div>
+          <div
+            class="demoDecoration"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+          ></div>
         </div>
-        <div class="demoVideo">
+        <div class="demoVideo" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
           <iframe
             width="100%"
             height="100%"
             src="https://www.youtube.com/embed/P-z9N79my_k"
+            title="Data extraction"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
         </div>
       </div>
 
       <div class="demoContainer inverse">
-        <div class="demoVideo">
+        <div class="demoVideo" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="0">
           <iframe
             width="100%"
             height="400px"
             src="https://www.youtube.com/embed/k8toz8x_whs"
+            title="Model management"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
         </div>
         <div class="demoDescription">
-          <div class="demoFonctionality">
+          <div
+            class="demoFonctionality"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+          >
             <div class="demoTitle">
               <h2>IV. MODELS</h2>
               <div class="demoTitleDecoration"></div>
             </div>
             <div class="demoText">
               <p>
-                Manage and use multiple domain-specific models directly
-                within the platform.
+                Manage and use different business models directly from the platform, without
+                changing the application code.
               </p>
               <p>
-                Models can be added, configured and selected to address
-                different simulation objectives.
+                Models can be added, configured, and selected to address different use cases and
+                simulation scenarios.
               </p>
             </div>
           </div>
+          <div
+            class="demoDecoration"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="400"
+          ></div>
         </div>
       </div>
 
       <div class="demoContainer first">
         <div class="demoDescription">
-          <div class="demoFonctionality">
+          <div
+            class="demoFonctionality"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="0"
+          >
             <div class="demoTitle">
-              <h2>V. SIMULATOR</h2>
+              <h2>V. THE SIMULATOR</h2>
               <div class="demoTitleDecoration"></div>
             </div>
             <div class="demoText">
               <p>
-                Launch simulations by combining extracted data,
-                models and user-defined parameters.
+                Run simulations by combining extracted data, models, and user-defined parameters.
               </p>
               <p>
-                Simulations can be executed globally or on a
-                segment-by-segment basis.
+                Simulations evaluate the system behavior over a full route or segment by segment.
               </p>
             </div>
           </div>
+          <div
+            class="demoDecoration"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+          ></div>
         </div>
-        <div class="demoVideo">
+        <div class="demoVideo" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
           <iframe
             width="100%"
             height="100%"
             src="https://www.youtube.com/embed/aHuVe212664"
+            title="Simulator"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
         </div>
       </div>
 
       <div class="demoContainer inverse">
-        <div class="demoVideo">
+        <div class="demoVideo" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="0">
           <iframe
             width="100%"
             height="400px"
             src="https://www.youtube.com/embed/hxOat_dnjQ0"
+            title="Scenarios"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
         </div>
         <div class="demoDescription">
-          <div class="demoFonctionality">
+          <div
+            class="demoFonctionality"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+          >
             <div class="demoTitle">
               <h2>VI. SCENARIOS</h2>
               <div class="demoTitleDecoration"></div>
             </div>
             <div class="demoText">
               <p>
-                Create, save and replay simulation scenarios
-                to compare different configurations.
+                Create, save, and replay simulation scenarios to compare different configurations
+                and assumptions.
               </p>
               <p>
-                Results are stored and accessible for analysis
-                and decision support.
+                Results are stored and can be consulted to facilitate analysis and decision-making.
               </p>
             </div>
           </div>
+          <div
+            class="demoDecoration"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="400"
+          ></div>
         </div>
       </div>
 
       <div class="demoContainer first">
         <div class="demoDescription">
-          <div class="demoFonctionality">
+          <div
+            class="demoFonctionality"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="0"
+          >
             <div class="demoTitle">
               <h2>VII. DATA SOURCES</h2>
               <div class="demoTitleDecoration"></div>
             </div>
             <div class="demoText">
               <p>
-                Add and manage external data sources to enrich
-                models and simulations.
+                Add and manage external data sources to enrich models and simulations with real-time
+                or historical information.
               </p>
               <p>
-                Data sources can be tested and reused without
-                impacting the rest of the platform.
+                Sources can be tested, modified, and reused without impacting the rest of the
+                platform.
               </p>
             </div>
           </div>
+          <div
+            class="demoDecoration"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+          ></div>
         </div>
-        <div class="demoVideo">
+        <div class="demoVideo" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
           <iframe
             width="100%"
             height="100%"
             src="https://www.youtube.com/embed/lwDK7U_23g0"
+            title="Data sources"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
         </div>
       </div>
+
+      <div class="swiper" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="0">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/outilsLogos/react.png" alt="ReactJs" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/outilsLogos/vite.jpg" alt="Vite" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/outilsLogos/primeReact.png" alt="Prime React" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/outilsLogos/chartJs.png" alt="ChartJS" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/outilsLogos/cesium.png" alt="Cesium" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/outilsLogos/python.jpg" alt="Python" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/outilsLogos/flask.webp" alt="Flask" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/outilsLogos/fiware.png" alt="Fiware" />
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div class="swiper" data-aos="fade-up" data-aos-duration="1200">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="./assets/outilsLogos/react.png" alt="React" /></div>
-        <div class="swiper-slide"><img src="./assets/outilsLogos/vite.jpg" alt="Vite" /></div>
-        <div class="swiper-slide"><img src="./assets/outilsLogos/primeReact.png" alt="PrimeReact" /></div>
-        <div class="swiper-slide"><img src="./assets/outilsLogos/chartJs.png" alt="ChartJS" /></div>
-        <div class="swiper-slide"><img src="./assets/outilsLogos/cesium.png" alt="Cesium" /></div>
-        <div class="swiper-slide"><img src="./assets/outilsLogos/python.jpg" alt="Python" /></div>
-        <div class="swiper-slide"><img src="./assets/outilsLogos/flask.webp" alt="Flask" /></div>
-        <div class="swiper-slide"><img src="./assets/outilsLogos/fiware.png" alt="FIWARE" /></div>
+    <section id="actuEvent" class="publicationsContainer">
+      <div
+        class="separatorContainer"
+        data-aos="fade-up"
+        data-aos-duration="1200"
+        data-aos-delay="0"
+      >
+        <div class="separator"></div>
+        <div class="separatorName">
+          <p>NEWS & EVENTS</p>
+        </div>
       </div>
-    </div>
+
+      <div id="articlesContainer">
+        <div class="articles">
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+            <a href="./articles/exampleArticle/index.html" class="article">
+              <img src="./assets/headDecoration.png" />
+              <div class="articleInfos">
+                <div class="articleHeader">
+                  <div class="articleHeaderDecoration"></div>
+                  <div class="publicationDate">06/06/2025</div>
+                </div>
+                <div class="articleContent">
+                  <h2>ARTICLE TITLE IN UPPERCASE WITH THE TEXT SHIFTED TO THE LEFT</h2>
+                  <p>Short summary of the scientific article or the abstract, to be defined.</p>
+                  <p class="author">Written by: Author</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+            <a href="./articles/exampleArticle/index.html" class="article">
+              <img src="./assets/headDecoration.png" />
+              <div class="articleInfos">
+                <div class="articleHeader">
+                  <div class="articleHeaderDecoration"></div>
+                  <div class="publicationDate">06/06/2025</div>
+                </div>
+                <div class="articleContent">
+                  <h2>ARTICLE TITLE IN UPPERCASE WITH THE TEXT SHIFTED TO THE LEFT</h2>
+                  <p>Short summary of the scientific article or the abstract, to be defined.</p>
+                  <p class="author">Written by: Author</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+            <a href="./articles/exampleArticle/index.html" class="article">
+              <img src="./assets/headDecoration.png" />
+              <div class="articleInfos">
+                <div class="articleHeader">
+                  <div class="articleHeaderDecoration"></div>
+                  <div class="publicationDate">06/06/2025</div>
+                </div>
+                <div class="articleContent">
+                  <h2>ARTICLE TITLE IN UPPERCASE WITH THE TEXT SHIFTED TO THE LEFT</h2>
+                  <p>Short summary of the scientific article or the abstract, to be defined.</p>
+                  <p class="author">Written by: Author</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="articles">
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+            <a href="./articles/exampleArticle/index.html" class="article">
+              <img src="./assets/headDecoration.png" />
+              <div class="articleInfos">
+                <div class="articleHeader">
+                  <div class="articleHeaderDecoration"></div>
+                  <div class="publicationDate">06/06/2025</div>
+                </div>
+                <div class="articleContent">
+                  <h2>ARTICLE TITLE IN UPPERCASE WITH THE TEXT SHIFTED TO THE LEFT</h2>
+                  <p>Short summary of the scientific article or the abstract, to be defined.</p>
+                  <p class="author">Written by: Author</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+            <div class="article filler"></div>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+            <div class="article filler"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="articlesScientifique" class="publicationsContainer">
+      <div
+        class="separatorContainer"
+        data-aos="fade-up"
+        data-aos-duration="1200"
+        data-aos-delay="0"
+      >
+        <div class="separator"></div>
+        <div class="separatorName">
+          <p>SCIENTIFIC PUBLICATIONS</p>
+        </div>
+      </div>
+
+      <div id="articlesContainer">
+        <div class="articles">
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+            <a href="./" class="article">
+              <img src="./assets/headDecoration.png" />
+              <div class="articleInfos">
+                <div class="articleHeader">
+                  <div class="articleHeaderDecoration"></div>
+                  <div class="publicationDate">06/06/2025</div>
+                </div>
+                <div class="articleContent">
+                  <h2>ARTICLE TITLE IN UPPERCASE WITH THE TEXT SHIFTED TO THE LEFT</h2>
+                  <p>Short summary of the scientific article or the abstract, to be defined.</p>
+                  <p class="author">Written by: Author</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+            <a href="./" class="article">
+              <img src="./assets/headDecoration.png" />
+              <div class="articleInfos">
+                <div class="articleHeader">
+                  <div class="articleHeaderDecoration"></div>
+                  <div class="publicationDate">06/06/2025</div>
+                </div>
+                <div class="articleContent">
+                  <h2>ARTICLE TITLE IN UPPERCASE WITH THE TEXT SHIFTED TO THE LEFT</h2>
+                  <p>Short summary of the scientific article or the abstract, to be defined.</p>
+                  <p class="author">Written by: Author</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+            <a href="./" class="article">
+              <img src="./assets/headDecoration.png" />
+              <div class="articleInfos">
+                <div class="articleHeader">
+                  <div class="articleHeaderDecoration"></div>
+                  <div class="publicationDate">06/06/2025</div>
+                </div>
+                <div class="articleContent">
+                  <h2>ARTICLE TITLE IN UPPERCASE WITH THE TEXT SHIFTED TO THE LEFT</h2>
+                  <p>Short summary of the scientific article or the abstract, to be defined.</p>
+                  <p class="author">Written by: Author</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="articles">
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+            <a href="./" class="article">
+              <img src="./assets/headDecoration.png" />
+              <div class="articleInfos">
+                <div class="articleHeader">
+                  <div class="articleHeaderDecoration"></div>
+                  <div class="publicationDate">06/06/2025</div>
+                </div>
+                <div class="articleContent">
+                  <h2>ARTICLE TITLE IN UPPERCASE WITH THE TEXT SHIFTED TO THE LEFT</h2>
+                  <p>Short summary of the scientific article or the abstract, to be defined.</p>
+                  <p class="author">Written by: Author</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+            <div class="article filler"></div>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+            <div class="article filler"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer>
-      <p>© Universite Gustave Eiffel - 2025</p>
+      <p>© Gustave Eiffel University - 2025</p>
     </footer>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
